@@ -17,7 +17,7 @@ const CharacterList = () => {
       setloading(false);
     }
     fetchData();
-  }, []);
+  }, [page]);
 
   return (
     <div className="container">
@@ -36,6 +36,8 @@ const CharacterList = () => {
           })}
         </div>
       )}
+      
+    <NavPage page={page} setPage={setPage}/>
     </div>
   );
 };
