@@ -6,7 +6,7 @@ const NavPage = (props) => {
     if (props.page==1){
         return (
             <header className='d-flex justify-content-between align-items-center'>
-                <p>Page : {props.page}</p>
+                <p className='font-weight-bold display-6'>Page : {props.page}</p>
         
                     <button className='btn btn-primary btn-sm mx-1'
                     onClick={()=>props.setPage(props.page+1)}>
@@ -19,7 +19,7 @@ const NavPage = (props) => {
     }else if(props.page==42){
         return (
             <header className='d-flex justify-content-between align-items-center'>
-                <p>Page : {props.page}</p>
+                <p className='font-weight-bold display-6'>Page : {props.page}</p>
         
                     <button className='btn btn-primary btn-sm mx-1'
                     onClick={()=>props.setPage(props.page-1)}>
@@ -31,7 +31,7 @@ const NavPage = (props) => {
     }else{
         return (
             <header className='d-flex justify-content-between align-items-center'>
-                <p>Page : {props.page}</p>
+                <p className='font-weight-bold display-6'>Page : {props.page}</p>
         
                 <div>
                     <button className='btn btn-primary btn-sm mx-1'
